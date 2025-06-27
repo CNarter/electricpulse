@@ -1,229 +1,436 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Electric Pulse - High-energy rock band from Manchester. Listen to our latest tracks, see show dates, and book us for your next event.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Electric Pulse - High-energy rock band from Worthing. Listen to our latest tracks, see show dates, and book us for your next event."
+    />
     <title>Electric Pulse | Official Band Website</title>
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Custom Tailwind Config -->
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'sans': ['Open Sans', 'sans-serif'],
-                        'display': ['Rock Salt', 'cursive'],
-                    },
-                    colors: {
-                        'brand-blue': '#00bfff',
-                        'brand-purple': '#8a2be2',
-                        'dark-rock': '#1a1a1a',
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Open Sans", "sans-serif"],
+              display: ["Rock Salt", "cursive"],
+            },
+            colors: {
+              "brand-blue": "#00bfff",
+              "brand-purple": "#8a2be2",
+              "dark-rock": "#1a1a1a",
+            },
+          },
+        },
+      };
     </script>
-    
-    <style>
-        /* A little extra style for that rock'n'roll feel */
-        .text-shadow-electric {
-            text-shadow: 0 0 5px #00bfff, 0 0 10px #00bfff, 0 0 15px #8a2be2;
-        }
-    </style>
-</head>
-<body class="bg-dark-rock text-gray-200 font-sans">
 
+    <style>
+      /* A little extra style for that rock'n'roll feel */
+      .text-shadow-electric {
+        text-shadow: 0 0 5px #00bfff, 0 0 10px #00bfff, 0 0 15px #8a2be2;
+      }
+    </style>
+  </head>
+  <body class="bg-dark-rock text-gray-200 font-sans">
     <!-- Header & Navigation -->
     <header class="bg-black/80 backdrop-blur-sm sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4">
-            <div class="flex items-center justify-between">
-                <!-- Logo -->
-                <a href="#" class="font-display text-2xl lg:text-3xl text-white hover:text-brand-blue transition-colors duration-300">
-                    Electric Pulse
-                </a>
-                
-                <!-- Desktop Navigation -->
-                <ul class="hidden md:flex items-center space-x-8">
-                    <li><a href="#" class="text-white hover:text-brand-blue border-b-2 border-brand-blue pb-1">Home</a></li>
-                    <li><a href="about.html" class="text-gray-300 hover:text-brand-blue transition-colors duration-300">About</a></li>
-                    <li><a href="shows.html" class="text-gray-300 hover:text-brand-blue transition-colors duration-300">Shows</a></li>
-                    <li><a href="#contact" class="bg-brand-blue text-white px-4 py-2 rounded-md hover:bg-brand-purple transition-all duration-300 transform hover:scale-105">Contact</a></li>
-                </ul>
-                
-                <!-- Mobile Menu Button -->
-                <div class="md:hidden">
-                    <button id="hamburger-button" class="text-white focus:outline-none">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-            
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden md:hidden mt-4">
-                <ul class="flex flex-col space-y-4">
-                    <li><a href="#" class="block text-white hover:text-brand-blue">Home</a></li>
-                    <li><a href="about.html" class="block text-gray-300 hover:text-brand-blue">About</a></li>
-                    <li><a href="shows.html" class="block text-gray-300 hover:text-brand-blue">Shows</a></li>
-                    <li><a href="#contact" class="block text-gray-300 hover:text-brand-blue">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <a
+            href="#"
+            class="font-display text-2xl lg:text-3xl text-white hover:text-brand-blue transition-colors duration-300"
+          >
+            Electric Pulse
+          </a>
+
+          <!-- Desktop Navigation -->
+          <ul class="hidden md:flex items-center space-x-8">
+            <li>
+              <a
+                href="#"
+                class="text-white hover:text-brand-blue border-b-2 border-brand-blue pb-1"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="text-gray-300 hover:text-brand-blue transition-colors duration-300"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="shows.html"
+                class="text-gray-300 hover:text-brand-blue transition-colors duration-300"
+                >Shows</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="bg-brand-blue text-white px-4 py-2 rounded-md hover:bg-brand-purple transition-all duration-300 transform hover:scale-105"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden">
+            <button id="hamburger-button" class="text-white focus:outline-none">
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4">
+          <ul class="flex flex-col space-y-4">
+            <li>
+              <a href="#" class="block text-white hover:text-brand-blue"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="block text-gray-300 hover:text-brand-blue"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="shows.html"
+                class="block text-gray-300 hover:text-brand-blue"
+                >Shows</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="block text-gray-300 hover:text-brand-blue"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
+      <!-- Hero Section -->
+      <section
+        class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden"
+      >
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+          <img
+            src="assets/images/epgroup.png"
+            alt="Electric Pulse band group photo"
+            class="w-full h-full object-cover"
+          />
+          <div class="absolute inset-0 bg-black opacity-40"></div>
+        </div>
+        <div class="relative z-10 px-6">
+          <h1
+            class="font-display text-5xl md:text-7xl lg:text-8xl text-shadow-electric"
+          >
+            Feel The Energy
+          </h1>
+          <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-gray-300">
+            Worthing's premier rock band bringing high-voltage shows and
+            unforgettable anthems.
+          </p>
+          <div class="mt-8 flex justify-center gap-4 flex-wrap">
+            <a
+              href="#music"
+              class="bg-brand-blue text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-blue-400 transition-all duration-300 transform hover:scale-105"
+              >Listen Now</a
+            >
+            <a
+              href="#contact"
+              class="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105"
+              >Book Us</a
+            >
+          </div>
+        </div>
+      </section>
 
-        <!-- Hero Section -->
-        <section class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
-             <!-- Background Image with Overlay -->
-            <div class="absolute inset-0 z-0">
-                <img src=" assets/images/epband.png" 
-                     alt="Electric Pulse performing live on stage" 
-                     class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-black opacity-80"></div>
+      <!-- Music Section -->
+      <section id="music" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+          <h2
+            class="font-display text-4xl md:text-5xl text-center mb-12 text-shadow-electric"
+          >
+            Latest Tracks
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Track 1 -->
+            <div
+              class="bg-dark-rock p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300"
+            >
+              <img 
+              src="assets/images/thunderroad.png" 
+              alt="Album cover for Thunder Road"
+                class="w-full h-auto rounded-md mb-4"
+              />
+              <h3 class="text-2xl font-bold text-white mb-2">Thunder Road</h3>
+              <p class="text-gray-400 mb-4">
+                Our latest single that's climbing the charts.
+              </p>
+              <!-- NOTE: Replace '#' with the actual path to your audio file -->
+              <audio controls class="w-full">
+                <source src="#" type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
             </div>
-            <div class="relative z-10 px-6">
-                <h1 class="font-display text-5xl md:text-7xl lg:text-8xl text-shadow-electric">Feel The Energy</h1>
-                <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-gray-300">Manchester's premier rock band bringing high-voltage shows and unforgettable anthems.</p>
-                <div class="mt-8 flex justify-center gap-4 flex-wrap">
-                    <a href="#music" class="bg-brand-blue text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-blue-400 transition-all duration-300 transform hover:scale-105">Listen Now</a>
-                    <a href="#contact" class="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105">Book Us</a>
-                </div>
+            <!-- Track 2 -->
+            <div
+              class="bg-dark-rock p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300"
+            >
+              <img
+                src="assets/images/electricdreams.png"
+                onerror="this.onerror=null;this.src='https://placehold.co/600x600/333333/ffffff?text=Album+Art';"
+                alt="Album cover for Electric Dreams"
+                class="w-full h-auto rounded-md mb-4"
+              />
+              <h3 class="text-2xl font-bold text-white mb-2">
+                Electric Dreams
+              </h3>
+              <p class="text-gray-400 mb-4">
+                The high-octane anthem that started it all.
+              </p>
+              <audio controls class="w-full">
+                <source src="#" type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
             </div>
-        </section>
+            <!-- Track 3 -->
+            <div
+              class="bg-dark-rock p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300"
+            >
+              <img
+                src="assets/images/midnightfuse.png"
+                onerror="this.onerror=null;this.src='https://placehold.co/600x600/333333/ffffff?text=Album+Art';"
+                alt="Album cover for Midnight Fuse"
+                class="w-full h-auto rounded-md mb-4"
+              />
+              <h3 class="text-2xl font-bold text-white mb-2">Midnight Fuse</h3>
+              <p class="text-gray-400 mb-4">
+                A fan favorite from our debut EP.
+              </p>
+              <audio controls class="w-full">
+                <source src="#" type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Music Section -->
-        <section id="music" class="py-20 bg-gray-900">
-            <div class="container mx-auto px-6">
-                <h2 class="font-display text-4xl md:text-5xl text-center mb-12 text-shadow-electric">Latest Tracks</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Track 1 -->
-                    <div class="bg-dark-rock p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
-                        <img src="https://placehold.co/600x600/8a2be2/ffffff?text=Thunder+Road" 
-                             onerror="this.onerror=null;this.src='https://placehold.co/600x600/333333/ffffff?text=Album+Art';"
-                             alt="Album cover for Thunder Road" class="w-full h-auto rounded-md mb-4">
-                        <h3 class="text-2xl font-bold text-white mb-2">Thunder Road</h3>
-                        <p class="text-gray-400 mb-4">Our latest single that's climbing the charts.</p>
-                        <!-- NOTE: Replace '#' with the actual path to your audio file -->
-                        <audio controls class="w-full">
-                            <source src="#" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
-                    <!-- Track 2 -->
-                    <div class="bg-dark-rock p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
-                        <img src="https://placehold.co/600x600/00bfff/ffffff?text=Electric+Dreams" 
-                             onerror="this.onerror=null;this.src='https://placehold.co/600x600/333333/ffffff?text=Album+Art';"
-                             alt="Album cover for Electric Dreams" class="w-full h-auto rounded-md mb-4">
-                        <h3 class="text-2xl font-bold text-white mb-2">Electric Dreams</h3>
-                        <p class="text-gray-400 mb-4">The high-octane anthem that started it all.</p>
-                        <audio controls class="w-full">
-                            <source src="#" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
-                    <!-- Track 3 -->
-                    <div class="bg-dark-rock p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
-                        <img src="https://placehold.co/600x600/ff4500/ffffff?text=Midnight+Fuse" 
-                             onerror="this.onerror=null;this.src='https://placehold.co/600x600/333333/ffffff?text=Album+Art';"
-                             alt="Album cover for Midnight Fuse" class="w-full h-auto rounded-md mb-4">
-                        <h3 class="text-2xl font-bold text-white mb-2">Midnight Fuse</h3>
-                        <p class="text-gray-400 mb-4">A fan favorite from our debut EP.</p>
-                        <audio controls class="w-full">
-                            <source src="#" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
-                </div>
+      <!-- Photo Gallery Section -->
+      <section id="gallery" class="py-20 bg-dark-rock">
+        <div class="container mx-auto px-6">
+          <h2
+            class="font-display text-4xl md:text-5xl text-center mb-12 text-shadow-electric"
+          >
+            From The Stage
+          </h2>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="overflow-hidden rounded-lg group">
+              <img
+                src="https://placehold.co/600x800/ff4500/000000?text=Live+Shot+1"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                alt="Electric Pulse in concert"
+              />
             </div>
-        </section>
-
-        <!-- Photo Gallery Section -->
-        <section id="gallery" class="py-20 bg-dark-rock">
-            <div class="container mx-auto px-6">
-                <h2 class="font-display text-4xl md:text-5xl text-center mb-12 text-shadow-electric">From The Stage</h2>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <div class="overflow-hidden rounded-lg group">
-                        <img src="https://placehold.co/600x800/ff4500/000000?text=Live+Shot+1" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" alt="Electric Pulse in concert">
-                    </div>
-                    <div class="overflow-hidden rounded-lg group">
-                        <img src="https://placehold.co/600x800/00bfff/000000?text=Live+Shot+2" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" alt="Band members on stage">
-                    </div>
-                    <div class="overflow-hidden rounded-lg group">
-                        <img src="https://placehold.co/600x800/8a2be2/000000?text=Crowd+View" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" alt="Crowd at an Electric Pulse concert">
-                    </div>
-                    <div class="overflow-hidden rounded-lg group">
-                        <img src="https://placehold.co/600x800/32cd32/000000?text=Backstage" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" alt="Behind the scenes with the band">
-                    </div>
-                </div>
+            <div class="overflow-hidden rounded-lg group">
+              <img
+                src="https://placehold.co/600x800/00bfff/000000?text=Live+Shot+2"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                alt="Band members on stage"
+              />
             </div>
-        </section>
-
+            <div class="overflow-hidden rounded-lg group">
+              <img
+                src="https://placehold.co/600x800/8a2be2/000000?text=Crowd+View"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                alt="Crowd at an Electric Pulse concert"
+              />
+            </div>
+            <div class="overflow-hidden rounded-lg group">
+              <img
+                src="https://placehold.co/600x800/32cd32/000000?text=Backstage"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                alt="Behind the scenes with the band"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer id="contact" class="bg-black pt-16 pb-8">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-                <!-- About/Logo Section -->
-                <div class="mb-6 md:mb-0">
-                    <h3 class="font-display text-2xl text-white mb-2">Electric Pulse</h3>
-                    <p class="text-gray-400">Rock & Roll from Manchester, UK.</p>
-                </div>
-                
-                <!-- Contact Section -->
-                <div class="mb-6 md:mb-0">
-                    <h3 class="text-xl font-bold text-white uppercase mb-4">Contact Us</h3>
-                    <p class="text-gray-400">For bookings and inquiries:</p>
-                    <a href="mailto:bookings@electricpulseband.com" class="text-brand-blue hover:text-brand-purple transition-colors">bookings@electricpulseband.com</a>
-                    <p class="text-gray-400 mt-2">Phone: <a href="tel:+441611234567" class="hover:text-brand-blue">+44 161 123 4567</a></p>
-                </div>
-                
-                <!-- Social Links Section -->
-                <div>
-                    <h3 class="text-xl font-bold text-white uppercase mb-4">Follow Us</h3>
-                    <div class="flex justify-center md:justify-start space-x-6">
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
-                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
-                        </a>
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
-                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.237 2.636 7.855 6.356 9.312-.088-.79-.168-1.696.034-2.434.19- .712.983-3.929.983-3.929s-.254-.508-.254-1.254c0-1.178.684-2.064 1.536-2.064.72 0 1.064.537 1.064 1.182 0 .717-.456 1.789-.687 2.773-.19.831.423 1.509 1.258 1.509 1.503 0 2.664-1.85 2.664-4.526 0-2.37-1.65-4.058-3.799-4.058-2.604 0-4.185 1.942-4.185 4.012 0 .71.275 1.48.614 1.91C8.2 14.8 8.1 15.2 7.97 15.632c-.173.552-.52 1.12-.596 1.296s-.098.132-.034.36c.064.228.275.456.417.552.17.12.56.24.87.096.31-.144 1.25-1.036 1.632-1.812.38-.776.68-1.536.68-1.536s.31.596.983 1.182c1.332 1.182 2.264.456 2.664.12.12-.24.48-.96.612-1.182.816.552 1.832.12 2.264-.528 0 0 .552-1.12.68-2.664.12-1.32-.744-2.52-2.264-2.52-1.704 0-2.88.96-2.88 2.28 0 .864.384 1.536.384 1.536z" /></svg>
-                        </a>
-                         <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
-                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
-                        </a>
-                         <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
-                           <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-3.37 12.339c-.347.228-.785.282-1.122.084a.838.838 0 01-.48-.755V8.332a.838.838 0 01.48-.755c.337-.198.775-.144 1.122.084l3.161 2.459a.833.833 0 010 1.342l-3.16 2.459z" clip-rule="evenodd"/></svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
+      <div class="container mx-auto px-6">
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left"
+        >
+          <!-- About/Logo Section -->
+          <div class="mb-6 md:mb-0">
+            <h3 class="font-display text-2xl text-white mb-2">
+              Electric Pulse
+            </h3>
+            <p class="text-gray-400">Rock & Roll from Worthing, UK.</p>
+          </div>
 
-            <!-- Footer Bottom -->
-            <div class="mt-12 border-t border-gray-800 pt-8 text-center text-gray-500">
-                <p>&copy; 2024 Electric Pulse Band. All rights reserved.</p>
+          <!-- Contact Section -->
+          <div class="mb-6 md:mb-0">
+            <h3 class="text-xl font-bold text-white uppercase mb-4">
+              Contact Us
+            </h3>
+            <p class="text-gray-400">For bookings and inquiries:</p>
+            <a
+              href="mailto:bookings@electricpulseband.com"
+              class="text-brand-blue hover:text-brand-purple transition-colors"
+              >bookings@electricpulseband.com</a
+            >
+            <p class="text-gray-400 mt-2">
+              Phone:
+              <a href="tel:+441611234567" class="hover:text-brand-blue"
+                >+44 161 123 4567</a
+              >
+            </p>
+          </div>
+
+          <!-- Social Links Section -->
+          <div>
+            <h3 class="text-xl font-bold text-white uppercase mb-4">
+              Follow Us
+            </h3>
+            <div class="flex justify-center md:justify-start space-x-6">
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <svg
+                  class="w-8 h-8"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <svg
+                  class="w-8 h-8"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 2C6.477 2 2 6.477 2 12c0 4.237 2.636 7.855 6.356 9.312-.088-.79-.168-1.696.034-2.434.19- .712.983-3.929.983-3.929s-.254-.508-.254-1.254c0-1.178.684-2.064 1.536-2.064.72 0 1.064.537 1.064 1.182 0 .717-.456 1.789-.687 2.773-.19.831.423 1.509 1.258 1.509 1.503 0 2.664-1.85 2.664-4.526 0-2.37-1.65-4.058-3.799-4.058-2.604 0-4.185 1.942-4.185 4.012 0 .71.275 1.48.614 1.91C8.2 14.8 8.1 15.2 7.97 15.632c-.173.552-.52 1.12-.596 1.296s-.098.132-.034.36c.064.228.275.456.417.552.17.12.56.24.87.096.31-.144 1.25-1.036 1.632-1.812.38-.776.68-1.536.68-1.536s.31.596.983 1.182c1.332 1.182 2.264.456 2.664.12.12-.24.48-.96.612-1.182.816.552 1.832.12 2.264-.528 0 0 .552-1.12.68-2.664.12-1.32-.744-2.52-2.264-2.52-1.704 0-2.88.96-2.88 2.28 0 .864.384 1.536.384 1.536z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <svg
+                  class="w-8 h-8"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <svg
+                  class="w-8 h-8"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-3.37 12.339c-.347.228-.785.282-1.122.084a.838.838 0 01-.48-.755V8.332a.838.838 0 01.48-.755c.337-.198.775-.144 1.122.084l3.161 2.459a.833.833 0 010 1.342l-3.16 2.459z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
             </div>
+          </div>
         </div>
+
+        <!-- Footer Bottom -->
+        <div
+          class="mt-12 border-t border-gray-800 pt-8 text-center text-gray-500"
+        >
+          <p>&copy; 2024 Electric Pulse Band. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
     <script>
-        // JavaScript for mobile hamburger menu toggle
-        const hamburgerButton = document.getElementById('hamburger-button');
-        const mobileMenu = document.getElementById('mobile-menu');
+      // JavaScript for mobile hamburger menu toggle
+      const hamburgerButton = document.getElementById("hamburger-button");
+      const mobileMenu = document.getElementById("mobile-menu");
 
-        hamburgerButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+      hamburgerButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
     </script>
-</body>
+  </body>
 </html>
