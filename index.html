@@ -84,23 +84,37 @@
     <main>
 
         <!-- Hero Section -->
-        <section class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
-             <!-- Background Image with Overlay -->
-            <div class="absolute inset-0 z-0">
-                <img src=" assets/images/epband.png" 
-                     alt="Electric Pulse performing live on stage" 
-                     class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-black opacity-80"></div>
-            </div>
-            <div class="relative z-10 px-6">
-                <h1 class="font-display text-5xl md:text-7xl lg:text-8xl text-shadow-electric">Feel The Energy</h1>
-                <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-gray-300">Manchester's premier rock band bringing high-voltage shows and unforgettable anthems.</p>
-                <div class="mt-8 flex justify-center gap-4 flex-wrap">
-                    <a href="#music" class="bg-brand-blue text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-blue-400 transition-all duration-300 transform hover:scale-105">Listen Now</a>
-                    <a href="#contact" class="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105">Book Us</a>
-                </div>
-            </div>
-        </section>
+        <!--
+  The background image is now applied directly to the section via the inline style attribute.
+  This simplifies the HTML structure by removing the need for a nested <img> tag.
+-->
+<section
+  class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden"
+  style="background-image: url('assets/images/epband.png'); background-size: cover; background-position: center;"
+>
+    <!--
+      This single div creates the dark overlay.
+      - `absolute inset-0`: Stretches the overlay to cover the entire section.
+      - `bg-black/80`: A Tailwind utility for a black background with 80% opacity.
+      - `mix-blend-multiply`: A CSS property that blends the dark overlay with the
+        colors of the background image for a richer effect than opacity alone.
+    -->
+    <div class="absolute inset-0 bg-black/80 mix-blend-multiply"></div>
+
+    <!--
+      The z-10 utility ensures this content container stays on top of the
+      background and the overlay.
+    -->
+    <div class="relative z-10 px-6">
+        <h1 class="font-display text-5xl md:text-7xl lg:text-8xl text-shadow-electric">Feel The Energy</h1>
+        <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-gray-300">Manchester's premier rock band bringing high-voltage shows and unforgettable anthems.</p>
+        <div class="mt-8 flex justify-center gap-4 flex-wrap">
+            <a href="#music" class="bg-brand-blue text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-blue-400 transition-all duration-300 transform hover:scale-105">Listen Now</a>
+            <a href="#contact" class="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105">Book Us</a>
+        </div>
+    </div>
+</section>
+
 
         <!-- Music Section -->
         <section id="music" class="py-20 bg-gray-900">
